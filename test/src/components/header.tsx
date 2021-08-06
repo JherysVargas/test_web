@@ -1,4 +1,4 @@
-import React from 'react'
+import { memo } from 'react'
 import '../styles/header.css'
 import { routes } from '../routes'
 import { IHomeReduce } from '../reducers'
@@ -37,4 +37,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default memo(Header)
