@@ -4,12 +4,14 @@ import Header from '../../../components/header'
 import Card from '../../../components/card'
 import { useHome } from '../providers/useHome'
 import Form from './components/form'
+import Lightbox from '../../../components/lightbox'
 
 const Home = () => {
   const {
     user,
     errors,
     item_menu,
+    refLightbox,
     onChangeText,
     onSubmitData
   } = useHome()
@@ -35,6 +37,7 @@ const Home = () => {
           Enviar
         </button>
       </Card>
+      <Lightbox ref={refLightbox}/>
     </div>
   )
 }
